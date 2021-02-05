@@ -1,0 +1,71 @@
+
+
+.head {
+  margin-top: 5vh;
+  font-family: sans-serif;
+  font-weight: thin;
+  justify-content: center;
+  text-align: center
+}
+
+.head h1 {
+  font-size: 2rem;
+}
+
+.head h3 {
+  font-size: 1rem;
+  width: 45%;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-weight: thin;
+
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 3vh;
+}
+
+.image {
+  width: 50%;
+  margin-top: 12vh;
+  margin-left: 25%;
+  margin-right: 10%;
+  height: 55vh;
+}
+
+.image img {
+  height: 100%;
+}
+
+
+
+.userList {
+  list-style: none;
+
+}
+
+.userList li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-height: 6vh;
+
+}
+
+.listItem {
+  color: #A9A49A;
+  cursor: pointer;
+  display: inline-block
+
+}
+
+.listItemHover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block
+}

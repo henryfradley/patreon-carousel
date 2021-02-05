@@ -1,0 +1,27 @@
+{
+  "name": "patreon-carousel",
+  "version": "1.0.0",
+  "description": "practice-file",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryfradley/patreon-carousel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henryfradley/patreon-carousel/issues"
+  },
+  "homepage": "https://github.com/henryfradley/patreon-carousel#readme",
+  "dependencies": {
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.6"
+  }
+}
