@@ -7,8 +7,6 @@ const BenefitsBox = (props) => {
       <img></img>
       <h3>{props.data.title}</h3>
       <p>{props.data.detail}</p>
-
-
     </div>
   )
 }
