@@ -86,6 +86,7 @@ $red: #FF424D;
   border: $thinBorder;
   width: 22vw;
   height: 42vh;
+  min-height: 320px;
   box-shadow: 0 0 20px rgb(202, 202, 202);
   border-radius: 4px;
 
@@ -208,6 +209,7 @@ $red: #FF424D;
 .creatorBox {
   width: 30%;
   height: 25vh;
+  min-height: 200px;
   border: $thinBorder;
   align-content: center;
   border-radius: 4pxs;
@@ -246,6 +248,7 @@ $red: #FF424D;
 
 .footer {
   height: 50vh;
+  min-height: 350px;
   display: grid;
   grid-template-columns: 50% 50%;
 }

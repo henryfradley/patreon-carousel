@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss';
+import Link from 'next/link';
 
 
 
@@ -16,18 +17,25 @@ const Home = () => {
     }
   }
 
+  const convertUrl = function(string) {
+    const url = string.split(' ').join('').toLowerCase().replace(/[^\w\s!?]/g,'');
+    return url;
+  }
+
   const User = (props) => {
     return (
-      <li><p className={setClassName(props.num)} onMouseEnter={() => {
-        setIndex(props.num)
-      }}>{props.value}</p></li>
+      <li>
+        <Link href="/themes/[id]" as={`/themes/${convertUrl(props.value)}`}>
+          <p className={setClassName(props.num)} onMouseEnter={() => {
+          setIndex(props.num)}}>{props.value}
+          </p>
+        </Link>
+      </li>
     )
   }
 
   const users = ['Podcasters', 'Video Creators', 'Musicians', 'Visual Artists', 'Communities', 'Writers & Journalists', 'Gaming Creators', 'Nonprofits', 'Tutorials and Education', 'Creators-of-all-kinds'];
-
   const currentImage = `https://henryportfolio.s3-us-west-2.amazonaws.com/${index}.jpg`
-
   const userList = users.map(user =>
     <User value={user} num={users.indexOf(user)} key={users.indexOf(user)} />
   )
